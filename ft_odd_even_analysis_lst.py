@@ -47,7 +47,7 @@ def ft_sumlst(x):
 
 
 def ft_odd_even_analysis_lst(x):
-    tab = "\t"
+    tab = "\t" * 2
     mas_first_part = []
     mas_sort = ft_odd_even_separator(x)
 
@@ -64,22 +64,18 @@ def ft_odd_even_analysis_lst(x):
     mst = max_lst(mas_first_part)
 
     print("Анализ списка:")
-    print("Количество четных чисел: {},".format(ft_len(mas_sort[0])) + " " * (mst - str1)
-          + tab * 2 + "Количество нечетных чисел: {}".format(ft_len(mas_sort[1])))
+    print("Количество четных чисел: {},".format(ft_len(mas_sort[0]))
+          + tab + "Количество нечетных чисел: {}".format(ft_len(mas_sort[1])))
 
     print("Максимальная четная цифра: {},".format(max_lst(mas_sort[0]))
-          + " " * (mst - str2) + tab * 2 +
+          + tab +
           "Максимальная нечетная цифра: {}".format(max_lst(mas_sort[1])))
 
-    print("Минимальная четная цифра: {},".format(min_lst(mas_sort[0])) +
-          " " * (mst - str3) + tab * 2 +
+    print("Минимальная четная цифра: {},".format(min_lst(mas_sort[0])) + tab +
           "Минимальная нечетная цифра: {}".format(min_lst(mas_sort[1])))
-    if ft_kol_num(ft_sumlst(mas_sort[0])) <= 10:
-        print("Сумма четных чисел: {},".format(ft_sumlst(mas_sort[0])) + tab * 2 +
-              "Сумма нечетных чисел: {}".format(ft_sumlst(mas_sort[1])))
-    else:
-        print("Сумма четных чисел: {},".format(ft_sumlst(mas_sort[0])) + tab * 2 +
-              "Сумма нечетных чисел: {}".format(ft_sumlst(mas_sort[1])))
+
+    print("Сумма четных чисел: {},".format(ft_sumlst(mas_sort[0])) + tab +
+          "Сумма нечетных чисел: {}".format(ft_sumlst(mas_sort[1])))
 
 
 ft_odd_even_analysis_lst([1, 2, 3, 4, 52, 6])
