@@ -12,4 +12,4 @@ def ft_strtlist(x):
         mass.append(aaa)
     return mass
 
-# print(ft_strlist("123456"))
+print(ft_strtlist("123456"))

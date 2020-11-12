@@ -13,5 +13,3 @@ def ft_odd_even_separator_lst(x):
         else:
             res[1].append(x[i])
     return res
-
-# print(ft_odd_even_separator_lst([1, 2, 3, 7, 4, 5, 6]))
