@@ -11,5 +11,3 @@ def ft_strtlist(x):
         aaa = x[i]
         mass.append(aaa)
     return mass
-
-print(ft_strtlist("123456"))
