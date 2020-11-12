@@ -48,20 +48,7 @@ def ft_sumlst(x):
 
 def ft_odd_even_analysis_lst(x):
     tab = "\t" * 2
-    mas_first_part = []
     mas_sort = ft_odd_even_separator(x)
-
-    str1 = ft_len("Количество четных чисел: {},".format(ft_len(mas_sort[0])))
-    str2 = ft_len("Максимальная четная цифра: ") + ft_kol_num(max_lst(mas_sort[0])) + 1
-    str3 = ft_len("Минимальная четная цифра: {},".format(ft_kol_num(min_lst(mas_sort[0]))))
-    str4 = ft_len("Сумма четных чисел: {},".format(ft_kol_num(ft_sumlst(mas_sort[0]))))
-
-    mas_first_part.append(str1)
-    mas_first_part.append(str2)
-    mas_first_part.append(str3)
-    mas_first_part.append(str4)
-
-    mst = max_lst(mas_first_part)
 
     print("Анализ списка:")
     print("Количество четных чисел: {},".format(ft_len(mas_sort[0]))
@@ -76,5 +63,3 @@ def ft_odd_even_analysis_lst(x):
 
     print("Сумма четных чисел: {},".format(ft_sumlst(mas_sort[0])) + tab +
           "Сумма нечетных чисел: {}".format(ft_sumlst(mas_sort[1])))
-
-# ft_odd_even_analysis_lst([1, 2, 3, 4, 52, 6])

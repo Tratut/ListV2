@@ -55,22 +55,7 @@ def ft_sred(x):
 
 def ft_pos_neg_analysis_lst(x):
     tab = "\t"
-    mas_first_part = []
     mas_sort = ft_pos_neg_separator_lst(x)
-
-    str0 = ft_len("Положительные:")
-    str1 = ft_len("Количество чисел: {},".format(ft_len(mas_sort[2])))
-    str2 = ft_len("Максимальная цифра: ") + ft_kol_num(max_lst(mas_sort[2])) + 1
-    str3 = ft_len("Минимальная цифра: {},".format(ft_kol_num(min_lst(mas_sort[2]))))
-    str4 = ft_len("Сумма чисел: {},".format(ft_kol_num(ft_sumlst(mas_sort[2]))))
-    str5 = ft_len("Среднее значение: {}".format(ft_kol_num(ft_sred(mas_sort[2]))))
-
-    mas_first_part.append(str1)
-    mas_first_part.append(str2)
-    mas_first_part.append(str3)
-    mas_first_part.append(str4)
-
-    mst = max_lst(mas_first_part)
 
     print("Положительные:" + tab + "Отрицательные:")
 
@@ -92,5 +77,3 @@ def ft_pos_neg_analysis_lst(x):
     print()
 
     print("Количество нулей:", ft_len(mas_sort[1]))
-
-ft_pos_neg_analysis_lst([1, -2, 3, -4, 5, -6])
