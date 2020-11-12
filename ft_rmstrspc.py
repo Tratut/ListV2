@@ -5,10 +5,18 @@ def ft_len(st):
     return kol
 
 
-def ft_rmstrspc(x):
+def ft_strtlist(x):
+    mass = []
+    for i in range(ft_len(x)):
+        aaa = x[i]
+        mass.append(aaa)
+    return mass
+
+
+def ft_rmstrspc(xx):
+    x = ft_strtlist(xx)
     res = ''
     for i in range(ft_len(x)):
-        res += x[i]
+        if x[i] != ' ':
+            res += x[i]
     return res
-
-# print(ft_rmstrspc(["a", "s", "d"]))

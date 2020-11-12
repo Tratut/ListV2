@@ -5,7 +5,7 @@ def ft_len(st):
     return kol
 
 
-def ft_rmstrchar(x):
+def ft_sum_even_part_lst(x):
     res = 0
     for i in range(ft_len(x)):
         if x[i] % 2 == 0:

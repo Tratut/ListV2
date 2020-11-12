@@ -93,4 +93,4 @@ def ft_pos_neg_analysis_lst(x):
 
     print("Количество нулей:", ft_len(mas_sort[1]))
 
-# ft_pos_neg_analysis_lst([1, -2, 3, -4, 5222222, -6])
+ft_pos_neg_analysis_lst([1, -2, 3, -4, 5, -6])
