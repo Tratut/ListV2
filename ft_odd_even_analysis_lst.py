@@ -77,5 +77,4 @@ def ft_odd_even_analysis_lst(x):
     print("Сумма четных чисел: {},".format(ft_sumlst(mas_sort[0])) + tab +
           "Сумма нечетных чисел: {}".format(ft_sumlst(mas_sort[1])))
 
-
-ft_odd_even_analysis_lst([1, 2, 3, 4, 52, 6])
+# ft_odd_even_analysis_lst([1, 2, 3, 4, 52, 6])
