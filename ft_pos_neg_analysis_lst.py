@@ -86,11 +86,11 @@ def ft_pos_neg_analysis_lst(x):
     print("Сумма чисел: {},".format(ft_sumlst(mas_sort[2]))
           + tab + "Сумма чисел: {}".format(ft_sumlst(mas_sort[0])))
 
-    print("Среднее значение: {},".format(ft_sred(mas_sort[2]))
+    print("Среднее значение: {}".format(ft_sred(mas_sort[2]))
           + tab + "Среднее значение: {}".format(ft_sred(mas_sort[0])))
 
     print()
 
     print("Количество нулей:", ft_len(mas_sort[1]))
 
-# ft_pos_neg_analysis_lst([1, -2, 3, -4, 5222222, -6])
+ft_pos_neg_analysis_lst([1, -2, 3, -4, 5222222, -6])
